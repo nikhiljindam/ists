@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndiaSoftTech Solution (ISTS) | Enterprise Software Architecture & Digital Systems</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="fevicon1.png">
     <!-- Tailwind CSS for modern, highly responsive utility styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for professional icons -->
@@ -11,7 +14,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -58,15 +64,18 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         .text-gradient {
             background: linear-gradient(to right, #00f2fe, #4facfe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .card-hover-effect {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+
         .card-hover-effect:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 20px 40px -10px rgba(0, 242, 254, 0.15);
@@ -74,29 +83,48 @@
         }
     </style>
 </head>
-<body class="bg-brand-darkest text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-darkest overflow-x-hidden">
+
+<body
+    class="bg-brand-darkest text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-brand-darkest overflow-x-hidden">
 
     <!-- Glowing Background Orbs -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-accent/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
-        <div class="absolute top-[20%] right-[-10%] w-[30rem] h-[30rem] bg-purple-500/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-[-20%] left-[20%] w-[40rem] h-[40rem] bg-blue-500/20 rounded-full mix-blend-screen filter blur-[150px] animate-blob animation-delay-4000"></div>
+        <div
+            class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-accent/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob">
+        </div>
+        <div
+            class="absolute top-[20%] right-[-10%] w-[30rem] h-[30rem] bg-purple-500/20 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-[-20%] left-[20%] w-[40rem] h-[40rem] bg-blue-500/20 rounded-full mix-blend-screen filter blur-[150px] animate-blob animation-delay-4000">
+        </div>
     </div>
 
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 glass border-b border-brand-border/50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-2 group">
-                <span class="text-xl md:text-2xl font-black tracking-wider text-white group-hover:text-brand-accent transition-colors duration-300">IndiaSoftTech Solutions<span class="text-brand-accent group-hover:text-white transition-colors duration-300">.</span></span>
+                <span
+                    class="text-xl md:text-2xl font-black tracking-wider text-white group-hover:text-brand-accent transition-colors duration-300">IndiaSoftTech
+                    Solutions<span
+                        class="text-brand-accent group-hover:text-white transition-colors duration-300">.</span></span>
             </a>
             <nav class="hidden md:flex items-center space-x-8">
-                <a href="#specialization" class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Specialization</a>
-                <a href="#deployments" class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Core Systems</a>
-                <a href="#initiatives" class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Academic</a>
-                <a href="#contact" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-darkest bg-gradient-to-r from-brand-accent to-brand-accentHover hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] rounded-full transition-all duration-300 transform hover:scale-105">Consultation</a>
+                <a href="#specialization"
+                    class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Specialization</a>
+                <a href="#deployments"
+                    class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Core
+                    Systems</a>
+                <a href="#initiatives"
+                    class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Academic</a>
+                <a href="#careers"
+                    class="text-sm font-semibold text-brand-textMuted hover:text-white transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-brand-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">Careers</a>
+                <a href="#contact"
+                    class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-darkest bg-gradient-to-r from-brand-accent to-brand-accentHover hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] rounded-full transition-all duration-300 transform hover:scale-105">Consultation</a>
             </nav>
             <!-- Mobile Menu Toggle -->
-            <label for="mobile-menu-toggle" class="md:hidden text-2xl text-slate-300 cursor-pointer hover:text-brand-accent transition-colors">
+            <label for="mobile-menu-toggle"
+                class="md:hidden text-2xl text-slate-300 cursor-pointer hover:text-brand-accent transition-colors">
                 <i class="fa-solid fa-bars"></i>
             </label>
         </div>
@@ -104,40 +132,57 @@
 
     <!-- Hidden Checkbox for Mobile Menu -->
     <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
-    <div class="fixed inset-0 z-40 bg-brand-darkest/95 backdrop-blur-xl hidden peer-checked:flex flex-col items-center justify-center space-y-8 md:hidden transition-all duration-300">
-        <label for="mobile-menu-toggle" class="absolute top-6 right-6 text-3xl text-slate-300 cursor-pointer hover:text-brand-accent transition-colors">
+    <div
+        class="fixed inset-0 z-40 bg-brand-darkest/95 backdrop-blur-xl hidden peer-checked:flex flex-col items-center justify-center space-y-8 md:hidden transition-all duration-300">
+        <label for="mobile-menu-toggle"
+            class="absolute top-6 right-6 text-3xl text-slate-300 cursor-pointer hover:text-brand-accent transition-colors">
             <i class="fa-solid fa-xmark"></i>
         </label>
-        <a href="#specialization" onclick="document.getElementById('mobile-menu-toggle').checked = false" class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Specialization</a>
-        <a href="#deployments" onclick="document.getElementById('mobile-menu-toggle').checked = false" class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Core Systems</a>
-        <a href="#initiatives" onclick="document.getElementById('mobile-menu-toggle').checked = false" class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Academic</a>
-        <a href="#contact" onclick="document.getElementById('mobile-menu-toggle').checked = false" class="px-8 py-4 text-sm font-bold uppercase tracking-widest text-brand-darkest bg-gradient-to-r from-brand-accent to-brand-accentHover rounded-full shadow-[0_0_20px_rgba(0,242,254,0.3)]">Consultation</a>
+        <a href="#specialization" onclick="document.getElementById('mobile-menu-toggle').checked = false"
+            class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Specialization</a>
+        <a href="#deployments" onclick="document.getElementById('mobile-menu-toggle').checked = false"
+            class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Core Systems</a>
+        <a href="#initiatives" onclick="document.getElementById('mobile-menu-toggle').checked = false"
+            class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Academic</a>
+        <a href="#careers" onclick="document.getElementById('mobile-menu-toggle').checked = false"
+            class="text-2xl font-bold text-brand-textMuted hover:text-brand-accent transition-colors">Careers</a>
+        <a href="#contact" onclick="document.getElementById('mobile-menu-toggle').checked = false"
+            class="px-8 py-4 text-sm font-bold uppercase tracking-widest text-brand-darkest bg-gradient-to-r from-brand-accent to-brand-accentHover rounded-full shadow-[0_0_20px_rgba(0,242,254,0.3)]">Consultation</a>
     </div>
 
     <!-- Hero Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center py-20 overflow-hidden">
         <!-- Abstract Tech Grid Background Overlay -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-50"></div>
-        
-        <div class="relative max-w-5xl mx-auto px-6 text-center animate-float">
-            <div class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold tracking-widest text-brand-accent glass border-brand-accent/30 uppercase mb-8 shadow-[0_0_15px_rgba(0,242,254,0.2)]">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-50">
+        </div>
+
+        <div class="relative max-w-5xl mx-auto px-6 text-center animate-float" data-aos="zoom-in"
+            data-aos-duration="1500">
+            <div
+                class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold tracking-widest text-brand-accent glass border-brand-accent/30 uppercase mb-8 shadow-[0_0_15px_rgba(0,242,254,0.2)]">
                 <span class="w-2 h-2 rounded-full bg-brand-accent mr-2 animate-pulse"></span>
                 System Engineering & Development Desk
             </div>
             <h1 class="text-5xl md:text-7xl font-black tracking-tight text-white leading-tight mb-4">
-                High-Performance Platforms <br class="hidden md:inline"> Built for <span class="text-gradient">Scale & Reliability</span>
+                High-Performance Platforms <br class="hidden md:inline"> Built for <span class="text-gradient">Scale &
+                    Reliability</span>
             </h1>
-            <h2 class="text-lg md:text-xl font-bold tracking-[0.3em] text-brand-accent uppercase mb-8 drop-shadow-[0_0_10px_rgba(0,242,254,0.5)]">
+            <h2
+                class="text-lg md:text-xl font-bold tracking-[0.3em] text-brand-accent uppercase mb-8 drop-shadow-[0_0_10px_rgba(0,242,254,0.5)]">
                 Innovate &bull; Integrate &bull; Inspire
             </h2>
             <p class="text-lg md:text-2xl text-brand-textMuted max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-                We engineer light, blazing fast custom solutions, robust backend infrastructure, and secure workflows optimized for high performance.
+                We engineer light, blazing fast custom solutions, robust backend infrastructure, and secure workflows
+                optimized for high performance.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="#deployments" class="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-brand-accent to-brand-accentHover text-brand-darkest font-bold tracking-wide rounded-full shadow-[0_0_30px_rgba(0,242,254,0.3)] hover:shadow-[0_0_40px_rgba(0,242,254,0.5)] transition-all duration-300 transform hover:-translate-y-1 text-center">
+                <a href="#deployments"
+                    class="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-brand-accent to-brand-accentHover text-brand-darkest font-bold tracking-wide rounded-full shadow-[0_0_30px_rgba(0,242,254,0.3)] hover:shadow-[0_0_40px_rgba(0,242,254,0.5)] transition-all duration-300 transform hover:-translate-y-1 text-center">
                     Explore Core Deliverables
                 </a>
-                <a href="#contact" class="w-full sm:w-auto px-10 py-5 glass border border-brand-border hover:border-brand-accent hover:text-brand-accent text-slate-300 font-bold tracking-wide rounded-full transition-all duration-300 transform hover:-translate-y-1 text-center">
+                <a href="#contact"
+                    class="w-full sm:w-auto px-10 py-5 glass border border-brand-border hover:border-brand-accent hover:text-brand-accent text-slate-300 font-bold tracking-wide rounded-full transition-all duration-300 transform hover:-translate-y-1 text-center">
                     Initiate Discussion
                 </a>
             </div>
@@ -148,50 +193,67 @@
     <section id="specialization" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Our Core <span class="text-gradient">Specialization</span></h2>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Our Core <span
+                        class="text-gradient">Specialization</span></h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-brand-accent to-transparent mx-auto mb-6 rounded-full"></div>
-                <p class="text-lg text-brand-textMuted font-light">The engineering parameters and system styles we deploy daily to solve complex software problems efficiently.</p>
+                <p class="text-lg text-brand-textMuted font-light">The engineering parameters and system styles we
+                    deploy daily to solve complex software problems efficiently.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Specialization 1 -->
-                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-brand-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-brand-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-brand-accent text-3xl mb-8 border border-brand-border group-hover:border-brand-accent/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                        <div
+                            class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-brand-accent text-3xl mb-8 border border-brand-border group-hover:border-brand-accent/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
                             <i class="fa-solid fa-layer-group"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Custom Architecture</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed font-light">
-                            Building isolated software infrastructures that handle secure data streams, complex system requests, and robust backend logic.
+                            Building isolated software infrastructures that handle secure data streams, complex system
+                            requests, and robust backend logic.
                         </p>
                     </div>
                 </div>
 
                 <!-- Specialization 2 -->
-                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-purple-400 text-3xl mb-8 border border-brand-border group-hover:border-purple-500/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                        <div
+                            class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-purple-400 text-3xl mb-8 border border-brand-border group-hover:border-purple-500/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
                             <i class="fa-solid fa-code-merge"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Integration & APIs</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed font-light">
-                            Developing powerful API layers and custom platform bridges to automate administrative taskflows efficiently.
+                            Developing powerful API layers and custom platform bridges to automate administrative
+                            taskflows efficiently.
                         </p>
                     </div>
                 </div>
 
                 <!-- Specialization 3 -->
-                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="glass p-10 rounded-2xl card-hover-effect flex flex-col justify-between group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-blue-400 text-3xl mb-8 border border-brand-border group-hover:border-blue-500/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                        <div
+                            class="w-16 h-16 bg-brand-darkest rounded-2xl flex items-center justify-center text-blue-400 text-3xl mb-8 border border-brand-border group-hover:border-blue-500/50 group-hover:scale-110 transition-all duration-300 shadow-lg">
                             <i class="fa-solid fa-bolt"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">High Performance</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed font-light">
-                            Optimizing databases, caching systems, and media routing so portals load globally with extreme speed.
+                            Optimizing databases, caching systems, and media routing so portals load globally with
+                            extreme speed.
                         </p>
                     </div>
                 </div>
@@ -203,82 +265,118 @@
     <section id="deployments" class="py-24 relative bg-brand-dark/30">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Core <span class="text-gradient">Systems</span> Implemented</h2>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Core <span
+                        class="text-gradient">Systems</span> Implemented</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-brand-accent to-transparent mx-auto mb-6 rounded-full"></div>
-                <p class="text-lg text-brand-textMuted font-light">Operational infrastructure designed, tested, and actively deployed across key industry sectors.</p>
+                <p class="text-lg text-brand-textMuted font-light">Operational infrastructure designed, tested, and
+                    actively deployed across key industry sectors.</p>
             </div>
 
             <!-- 3-Column Grid for All Systems -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                
+
                 <!-- System 1 -->
-                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group">
+                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group"
+                    data-aos="zoom-in-up" data-aos-delay="100">
                     <div class="h-2 bg-gradient-to-r from-brand-accent to-blue-500"></div>
                     <div class="p-10 flex-grow relative">
-                        <div class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
                             <i class="fa-solid fa-hospital-user text-brand-accent"></i>
                         </div>
                         <div class="flex items-center justify-between mb-8 relative z-10">
-                            <span class="text-xs font-black uppercase tracking-widest text-brand-accent bg-brand-accent/10 px-4 py-2 rounded-full border border-brand-accent/20">Healthcare</span>
+                            <span
+                                class="text-xs font-black uppercase tracking-widest text-brand-accent bg-brand-accent/10 px-4 py-2 rounded-full border border-brand-accent/20">Healthcare</span>
                         </div>
-                        <h3 class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-brand-accent transition-colors duration-300">Hospital Multi-Platform</h3>
+                        <h3
+                            class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-brand-accent transition-colors duration-300">
+                            Hospital Multi-Platform</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed mb-6 relative z-10 font-light">
-                            A highly unified healthcare network integrating a Central Web Application, tailored Mobile Apps, and built-in AI smart report generation to automate interpretations securely.
+                            A highly unified healthcare network integrating a Central Web Application, tailored Mobile
+                            Apps, and built-in AI smart report generation to automate interpretations securely.
                         </p>
                     </div>
                     <div class="p-8 bg-brand-darkest/50 border-t border-brand-border/40">
                         <div class="flex flex-wrap gap-3">
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">AI Engine</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Mobile Apps</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Web Portal</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">AI
+                                Engine</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Mobile
+                                Apps</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Web
+                                Portal</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- System 2 -->
-                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group">
+                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group"
+                    data-aos="zoom-in-up" data-aos-delay="200">
                     <div class="h-2 bg-gradient-to-r from-green-400 to-emerald-600"></div>
                     <div class="p-10 flex-grow relative">
-                        <div class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
                             <i class="fa-brands fa-shopify text-green-400"></i>
                         </div>
                         <div class="flex items-center justify-between mb-8 relative z-10">
-                            <span class="text-xs font-black uppercase tracking-widest text-green-400 bg-green-500/10 px-4 py-2 rounded-full border border-green-500/20">E-Commerce</span>
+                            <span
+                                class="text-xs font-black uppercase tracking-widest text-green-400 bg-green-500/10 px-4 py-2 rounded-full border border-green-500/20">E-Commerce</span>
                         </div>
-                        <h3 class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-green-400 transition-colors duration-300">Golfsprint Platform</h3>
+                        <h3
+                            class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-green-400 transition-colors duration-300">
+                            Golfsprint Platform</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed mb-6 relative z-10 font-light">
-                            A highly optimized custom Shopify app that bridges users and creative artists. Built for seamless requirement collection and automated, immediate approval loops.
+                            A highly optimized custom Shopify app that bridges users and creative artists. Built for
+                            seamless requirement collection and automated, immediate approval loops.
                         </p>
                     </div>
                     <div class="p-8 bg-brand-darkest/50 border-t border-brand-border/40">
                         <div class="flex flex-wrap gap-3">
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Shopify API</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Approval Engine</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Architecture</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Shopify
+                                API</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Approval
+                                Engine</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Architecture</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- System 3 -->
-                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group">
+                <div class="glass rounded-2xl overflow-hidden card-hover-effect flex flex-col h-full group"
+                    data-aos="zoom-in-up" data-aos-delay="300">
                     <div class="h-2 bg-gradient-to-r from-indigo-400 to-purple-600"></div>
                     <div class="p-10 flex-grow relative">
-                        <div class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-0 right-0 p-8 opacity-10 text-6xl group-hover:scale-110 transition-transform duration-500">
                             <i class="fa-solid fa-school text-indigo-400"></i>
                         </div>
                         <div class="flex items-center justify-between mb-8 relative z-10">
-                            <span class="text-xs font-black uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-4 py-2 rounded-full border border-indigo-500/20">Academic</span>
+                            <span
+                                class="text-xs font-black uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-4 py-2 rounded-full border border-indigo-500/20">Academic</span>
                         </div>
-                        <h3 class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-indigo-400 transition-colors duration-300">Institutional Engine</h3>
+                        <h3
+                            class="text-3xl font-bold text-white mb-6 relative z-10 group-hover:text-indigo-400 transition-colors duration-300">
+                            Institutional Engine</h3>
                         <p class="text-brand-textMuted text-base leading-relaxed mb-6 relative z-10 font-light">
-                            A high-traffic web platform featuring secure multi-role privileges. Designed for extreme speed, effortless continuous database updates, and scalable delivery.
+                            A high-traffic web platform featuring secure multi-role privileges. Designed for extreme
+                            speed, effortless continuous database updates, and scalable delivery.
                         </p>
                     </div>
                     <div class="p-8 bg-brand-darkest/50 border-t border-brand-border/40">
                         <div class="flex flex-wrap gap-3">
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">DBMS</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Static Site</span>
-                            <span class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Multi-Role RBAC</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">DBMS</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Static
+                                Site</span>
+                            <span
+                                class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border/50 shadow-inner">Multi-Role
+                                RBAC</span>
                         </div>
                     </div>
                 </div>
@@ -289,32 +387,104 @@
 
     <!-- Subtle Section: Initiatives -->
     <section id="initiatives" class="py-24 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-brand-card to-brand-dark border border-brand-border text-brand-accent rounded-3xl text-3xl mb-10 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10" data-aos="flip-up" data-aos-duration="1000">
+            <div
+                class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-brand-card to-brand-dark border border-brand-border text-brand-accent rounded-3xl text-3xl mb-10 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <h2 class="text-4xl md:text-5xl font-black text-white mb-8">Cultivating <span class="text-gradient">Next-Gen</span> Talent</h2>
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-8">Cultivating <span
+                    class="text-gradient">Next-Gen</span> Talent</h2>
             <p class="text-brand-textMuted max-w-3xl mx-auto text-lg md:text-xl leading-relaxed font-light">
-                As part of our commitment to system-level innovation, IndiaSoftTech Solution organizes structured practical internships and advanced engineering training modules. We host real-world lab frameworks where students learn to construct production-ready architectures, build microservices, and deploy clean code systems.
+                As part of our commitment to system-level innovation, IndiaSoftTech Solution organizes structured
+                practical internships and advanced engineering training modules. We host real-world lab frameworks where
+                students learn to construct production-ready architectures, build microservices, and deploy clean code
+                systems.
             </p>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="py-24 relative border-t border-brand-border/30 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark to-brand-darkest -z-10"></div>
+        <div
+            class="absolute right-[-10%] top-[20%] w-[20rem] h-[20rem] bg-pink-500/10 rounded-full mix-blend-screen filter blur-[100px] animate-blob">
+        </div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="glass p-12 md:p-16 rounded-3xl w-full flex flex-col md:flex-row items-center justify-between border border-brand-border shadow-2xl relative overflow-hidden"
+                data-aos="fade-right" data-aos-duration="1200">
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(to_right,#00f2fe10_1px,transparent_1px),linear-gradient(to_bottom,#00f2fe10_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30">
+                </div>
+
+                <div class="md:w-3/5 text-center md:text-left mb-10 md:mb-0 relative z-10">
+                    <div
+                        class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold tracking-widest text-pink-400 glass border-pink-400/30 uppercase mb-6">
+                        <i class="fa-solid fa-rocket mr-2"></i> Join The Team
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">Elevate Your <br> <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">Engineering
+                            Career</span></h2>
+                    <p class="text-brand-textMuted text-lg font-light leading-relaxed mb-8">
+                        We are actively looking for exceptional talent to build scalable, high-performance systems. If
+                        you're passionate about elegant code and robust architecture, we'd love to hear from you.
+                    </p>
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <span
+                            class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border shadow-inner"><i
+                                class="fa-solid fa-code text-brand-accent mr-2"></i>Developers</span>
+                        <span
+                            class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border shadow-inner"><i
+                                class="fa-solid fa-paint-roller text-pink-400 mr-2"></i>Designers</span>
+                        <span
+                            class="text-xs font-semibold bg-brand-darkest text-slate-300 px-4 py-2 rounded-full border border-brand-border shadow-inner"><i
+                                class="fa-solid fa-server text-purple-400 mr-2"></i>DevOps</span>
+                    </div>
+                </div>
+
+                <div class="md:w-2/5 flex justify-center relative z-10">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                        </div>
+                        <a href="mailto:contact@istsolution.in?subject=Application for Career Opportunity"
+                            class="relative flex flex-col items-center justify-center p-8 bg-brand-darkest border border-brand-border rounded-2xl hover:border-pink-500/50 transition-all duration-300 transform group-hover:-translate-y-2">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-pink-500/20 to-purple-600/20 rounded-full flex items-center justify-center text-pink-400 text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-file-arrow-up"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Send Your Resume</h3>
+                            <p class="text-sm text-brand-textMuted text-center font-light mb-6">Drop us an email with
+                                your portfolio & resume.</p>
+                            <span
+                                class="text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 group-hover:underline">contact@istsolution.in</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact & Consultation Desk -->
     <section id="contact" class="py-24 relative border-t border-brand-border/30">
         <div class="absolute inset-0 bg-gradient-to-b from-brand-dark to-brand-darkest -z-10"></div>
-        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Initiate <span class="text-gradient">Consultation</span></h2>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">Initiate <span
+                        class="text-gradient">Consultation</span></h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-brand-accent to-transparent mx-auto mb-6 rounded-full"></div>
-                <p class="text-lg text-brand-textMuted font-light">Have a mission-critical platform to launch, or require custom integration systems? Connect directly with our core engineering desk.</p>
+                <p class="text-lg text-brand-textMuted font-light">Have a mission-critical platform to launch, or
+                    require custom integration systems? Connect directly with our core engineering desk.</p>
             </div>
-            
+
             <div class="glass p-12 rounded-3xl w-full max-w-2xl mx-auto relative overflow-hidden">
-                <div class="absolute top-[-50%] right-[-50%] w-full h-full bg-brand-accent/5 rounded-full blur-3xl"></div>
-                <p class="text-white text-2xl font-bold mb-3 relative z-10">IndiaSoftTech Solution Engineering Inquiries</p>
-                <p class="text-brand-accent text-sm mb-10 uppercase tracking-widest font-semibold relative z-10">Secure Technical Intake Desk</p>
-                <a href="mailto:contact@istsolution.in" class="inline-flex items-center justify-center space-x-4 px-10 py-5 bg-white/5 border border-brand-accent/30 text-white hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-accentHover hover:border-transparent hover:text-brand-darkest font-bold tracking-widest uppercase rounded-2xl transition-all duration-300 w-full group relative z-10 shadow-[0_0_15px_rgba(0,242,254,0.1)] hover:shadow-[0_0_30px_rgba(0,242,254,0.4)]">
+                <div class="absolute top-[-50%] right-[-50%] w-full h-full bg-brand-accent/5 rounded-full blur-3xl">
+                </div>
+                <p class="text-white text-2xl font-bold mb-3 relative z-10">IndiaSoftTech Solution Engineering Inquiries
+                </p>
+                <p class="text-brand-accent text-sm mb-10 uppercase tracking-widest font-semibold relative z-10">Secure
+                    Technical Intake Desk</p>
+                <a href="mailto:contact@istsolution.in"
+                    class="inline-flex items-center justify-center space-x-4 px-10 py-5 bg-white/5 border border-brand-accent/30 text-white hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-accentHover hover:border-transparent hover:text-brand-darkest font-bold tracking-widest uppercase rounded-2xl transition-all duration-300 w-full group relative z-10 shadow-[0_0_15px_rgba(0,242,254,0.1)] hover:shadow-[0_0_30px_rgba(0,242,254,0.4)]">
                     <i class="fa-regular fa-envelope text-2xl group-hover:scale-110 transition-transform"></i>
                     <span class="text-sm md:text-base">contact@istsolution.in</span>
                 </a>
@@ -324,9 +494,12 @@
 
     <!-- Footer -->
     <footer class="border-t border-brand-border/30 bg-brand-darkest py-12 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-brand-textMuted text-sm relative z-10">
+        <div
+            class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-brand-textMuted text-sm relative z-10">
             <div class="mb-6 md:mb-0 flex items-center space-x-4">
-                <span class="font-black text-xl md:text-2xl text-white tracking-wider hover:text-brand-accent transition-colors duration-300">IndiaSoftTech Solutions<span class="text-brand-accent">.</span></span>
+                <span
+                    class="font-black text-xl md:text-2xl text-white tracking-wider hover:text-brand-accent transition-colors duration-300">IndiaSoftTech
+                    Solutions<span class="text-brand-accent">.</span></span>
                 <span class="opacity-50 pl-4 border-l border-brand-border">&copy; 2026. All rights reserved.</span>
             </div>
             <div class="flex space-x-8 font-semibold tracking-wide text-xs uppercase">
@@ -337,5 +510,16 @@
         </div>
     </footer>
 
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
 </body>
+
 </html>
